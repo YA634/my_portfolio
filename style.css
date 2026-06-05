@@ -157,7 +157,12 @@ body{
     }
     p{
         font-size: 12px;
-    }  
+    }
+    a{
+        position: absolute;
+        inset: 0;
+        text-decoration: none;
+    }
 }
 .About{
     position: relative;
