@@ -20,3 +20,25 @@ function showElementAnimation() {
 }
 showElementAnimation();
 window.addEventListener('scroll', showElementAnimation);
+
+const datas = {
+	"monster-battle":{
+		"title":"monster-battle",
+		"img":"img/image copy.png",
+		"discription":"バトルロイヤルモードとパーティーバトルモードが遊べます。使用:flask",
+		"link":"https://monster-battle-p2v7.onrender.com"
+	},
+	"cards-app":{
+		"title":"cards-app",
+		"img":"img/image.png",
+		"discription":"バカラ、ブラックジャック、ポーカー(未実装)が遊べます。",
+		"link":"https://cards-app-6tfq.onrender.com"
+	}
+};
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const data = datas[id];
+document.getElementById('works-title').innerText=data.title
+document.getElementById('works-img').src=data.img
+document.getElementById('works-discription').innerText=data.discription
+document.getElementById('works-link').href=data.link
