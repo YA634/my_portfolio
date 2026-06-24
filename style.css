@@ -164,6 +164,24 @@ body{
         text-decoration: none;
     }
 }
+
+.works-title{
+    width: 100%;
+    padding: 50px;
+}
+.works
+.works-discription{
+    width: 100%;
+    padding: 20px;
+}
+.works-img{
+    width: 100%;
+}
+.works-link{
+    text-decoration: none;
+}
+
+
 .About{
     position: relative;
     padding-top: 150px;
