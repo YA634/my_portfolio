@@ -38,7 +38,14 @@ const datas = {
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const data = datas[id];
-document.getElementById('works-title').innerText=data.title
-document.getElementById('works-img').src=data.img
+document.querySelector('.works-title').innerText=data.title
+const imgEl = document.createElement('img');
+imgEl.src = data.img;
+imgEl.alt = data.title;
+document.getElementById('works-img').appendChild(imgEl);
 document.getElementById('works-discription').innerText=data.discription
-document.getElementById('works-link').href=data.link
+const linkEl = document.createElement('a');
+linkEl.href= data.link
+linkEl.textContent = 'アプリを開く';
+linkEl.target = '_blank';
+document.getElementById('works-link').appendChild(linkEl);
