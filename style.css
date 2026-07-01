@@ -166,15 +166,17 @@ body{
 }
 
 .works-title{
+    margin-top: 100px;
     width: 100%;
-    padding: 50px;
-    h2{
+    padding-left: 50px;
+    /* padding: 50px; */
+    /* h2{
         font-size: 48px;
         @media screen and (max-width: 768px){
             font-size: 24px;
         }
-    }
-    h5{
+    } */
+    /* h5{
         position: absolute;
         top: 120px;
         left: 40px;
@@ -187,20 +189,65 @@ body{
             top: 52px;
             left: -12px;
         }
+    } */
+}
+h2.works-title{
+    padding-left: 80px;
+    font-size: 48px;
+    @media screen and (max-width: 768px){
+        font-size: 24px;
     }
 }
-.works
-.works-discription{
+h5.works-title{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 60px;
+    color: aqua;
+    opacity: 0.4;
+    line-height: 1;
+    @media screen and (max-width: 768px){
+        font-size: 48px;
+        top: 52px;
+        left: -12px;
+    }
+}
+
+.works-contents-group{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+#works-discription{
     width: 100%;
     padding: 20px;
 }
-.works-img{
+
+#works-img{
     width: 100%;
+    padding: 20px;
+    object-fit: cover;
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
 }
-.works-link{
+
+#works-link{
+    padding: 20px;
+}
+#works-link a {
     text-decoration: none;
 }
 
+.works-text{
+    background: #eee7e0;
+    width: 100%;
+    padding: 20px;
+}
 
 .About{
     position: relative;
@@ -234,6 +281,7 @@ body{
         }
     }
 }
+
 .About-content{
     padding-top: 100px;
     width: 100%;
