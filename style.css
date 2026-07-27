@@ -283,7 +283,7 @@ h5.works-title{
 }
 
 .About-content{
-    padding-top: 100px;
+    padding-top: 20px;
     width: 100%;
     max-width: 1280px;
     display: flex;
@@ -371,6 +371,7 @@ h5.works-title{
     }
 }
 .contact-items{
+    padding-top: 20px;
     padding: 18px;
     width: 100%;
     display: flex;
